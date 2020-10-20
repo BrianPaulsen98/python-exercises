@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import requests
 import re
+import time
 
 from bs4 import BeautifulSoup
 
@@ -51,8 +52,13 @@ def scrape_google_scholar_results(topic, filename=None):
     return top10Data
 
 scrape_google_scholar_results('data mining', 'data-mining.tsv')
+time.sleep(3)
 scrape_google_scholar_results('machine learning', 'machine-learning.tsv')
+time.sleep(3)
 scrape_google_scholar_results('artificial intelligence', 'artificial-intelligence.tsv')
+time.sleep(3)
 scrape_google_scholar_results('data analytics', 'data-analytics.tsv')
+time.sleep(3)
 scrape_google_scholar_results('text mining', 'text-mining.tsv')
+time.sleep(3)
 scrape_google_scholar_results('image processing', 'image-processing.tsv')
