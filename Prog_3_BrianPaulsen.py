@@ -15,7 +15,6 @@ def scrape_google_scholar_results(topic, filename=None):
     arg = topic.replace(' ', '+')
     url = 'https://scholar.google.com/scholar?q={}'.format(arg)
     response = requests.get(url)
-    print(response)
     soup = BeautifulSoup(response.content, features='lxml')
     
     top10Data = []
