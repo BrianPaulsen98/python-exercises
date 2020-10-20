@@ -40,4 +40,4 @@ def filter_board_endpoint():
     else:
         abort(400)
 
-app.run(port=5004)
+app.run()
