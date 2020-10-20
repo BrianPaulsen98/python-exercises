@@ -2,7 +2,7 @@
 
 from pyzillow.pyzillow import ZillowWrapper, GetDeepSearchResults
 
-api_key = 'X1-ZWz16yp40j9897_1acr8'
+api_key = ''
 
 zillow_data = ZillowWrapper(api_key)
 
